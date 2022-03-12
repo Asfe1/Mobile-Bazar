@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-Bazar</title>
+
+    <link rel="shortcut icon" href="images/icons8-cell-phone-64.png" type="image/x-icon">
+    <!-- stylesheets to load CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body class="container">
+    <header>
+        <h1 class="text-center mt-5 fw-bold fs-1 text-success">Welcome to Mobile-Bazar <img
+                src="images/—Pngtree—smartphone icon vector_3683610.png" width="5%" alt=""></h1>
+    </header>
+    <main>
+        <!-- show product details -->
+        <section>
+            <div id="productDetails" class="my-5 mx-auto " style="overflow-x: auto; width: 90%;">
+            </div>
+        </section>
+        <!---------------------------------->
+        <section class=" mt-5">
+            <!-- serach box and search button -->
+
+            <div class="input-group  w-50 mx-auto mt-5">
+                <input id="search-input-text" type="text" class="form-control " placeholder="Search phone"
+                    aria-label="Search phone" aria-describedby="button-addon2">
+                <button id="search-btn" class="btn btn-success btn-outline-secondary text-white" type="button"
+                    id="button-addon2">Search</button>
+
+            </div>
+            <!-- for no input -->
+            <div id="noInput" class="mx-auto text-center mb-5" style=" display: none;">
+                <p id="noInput" class="text-danger text-center fs-5">***please enter a name***
+                </p>
+                <img class="img-fluid mt-5 w-25" src="images/PngItem_1492109.png" alt="">
+            </div>
+
+
+
+
+            <!-- spinner -->
+            <div class="text-center mt-3" id="spinner" style=" display: none;">
+                <div class="spinner-border" role="status" style="width: 3rem; height: 3rem;">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            <!---------------------------------->
+            <!-- Result not found part -->
+            <div id="ResultNotFound" class="mx-auto text-center mt-5" style=" display: none;">
+                <img class="img-fluid mt-5" src="images/resultNotFound.png" alt="">
+            </div>
+            <!---------------------------------->
+
+        </section>
+
+        <!-- Show search result  -->
+        <section>
+            <div id="phones" class="row row-cols-1 row-cols-md-3 g-5 mx-auto mt-2" style="width:90%">
+            </div>
+        </section>
+        <div class="d-grid gap-2 col-3 mx-auto my-5">
+            <button id="showmore" class="btn btn-success" type="button" style="display: none;">Show more</button>
+        </div>
+
+        <!---------------------------------->
+    </main>
+
+    <!-- Bootstrap JavaScript  -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+    <!-- JavaScript for our project -->
+    <script src="js/web.js"></script>
+</body>
+
+
+
+</html>
