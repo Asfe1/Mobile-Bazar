@@ -33,6 +33,14 @@ document.getElementById('search-btn').addEventListener('click', function () {
 
 })
 
+// see result by clicking enter
+
+document.getElementById('search-input-text').addEventListener('keypress', function (event) {
+  if (event.key == 'Enter') {
+    document.getElementById('search-btn').click();
+  }
+});
+
 // product details data fetch
 const fetchProductDetails = (value) => {
   fetch(`https://openapi.programming-hero.com/api/phone/${value}`)
